@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zleeto — Smart Workforce Mobility & Cab Management</title>
+  <meta name="description" content="Zleeto: AI-powered smart workforce mobility and corporate cab management. Optimize routes, reduce costs, improve safety and keep your team moving—scalable for enterprises." />
+  <meta name="keywords" content="Zleeto, workforce mobility, corporate cab management, employee transport, route optimization, shuttle scheduling, corporate commute, office transport, cab pooling, workforce transit" />
+  <link rel="canonical" href="https://www.zleeto.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Zleeto">
+  <meta property="og:title" content="Zleeto — Smart Workforce Mobility & Cab Management">
+  <meta property="og:description" content="AI-driven workforce mobility platform for corporate cab management: route optimization, live tracking, compliance, analytics and auto-scheduling." />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.zleeto.com/">
+  <meta property="og:image" content="/assets/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zleeto — Smart Workforce Mobility">
+  <meta name="twitter:description" content="AI-driven platform for corporate cab routing, scheduling and analytics. Scale transport operations with confidence.">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Zleeto",
+    "url": "https://www.zleeto.com",
+    "logo": "https://www.zleeto.com/assets/logo.png",
+    "sameAs": []
+  }
+  </script>
+
+  <style>
+    :root{--accent:#0b5fff;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;color:#111}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 40px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:40px}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;padding:60px 40px;align-items:center}
+    .h-title{font-size:40px;line-height:1.02;margin:0 0 18px}
+    .h-sub{color:var(--muted);margin-bottom:24px}
+    .features{display:flex;gap:16px;flex-wrap:wrap}
+    .card{background:#fff;border:1px solid #eee;padding:18px;border-radius:12px;flex:1;min-width:180px}
+    .waitlist{background:#f8fbff;padding:22px;border-radius:12px;border:1px solid #e6f0ff}
+    form input, form button{width:100%;padding:12px;margin-top:8px;border-radius:8px;border:1px solid #ddd}
+    form button{background:var(--accent);color:#fff;border:none;cursor:pointer}
+    .how{padding:40px;background:#fcfdff}
+    footer{padding:28px 40px;border-top:1px solid #f0f0f0;color:var(--muted)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;padding:36px 20px}.h-title{font-size:28px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/assets/logo.png" alt="Zleeto logo">
+      <strong>Zleeto</strong>
+    </div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#waitlist">Join Waitlist</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" role="region" aria-label="Zleeto hero">
+      <div>
+        <h1 class="h-title">Zleeto — Intelligent Workforce Mobility</h1>
+        <p class="h-sub">Reduce commute costs, cut idle time and deliver a safer, more reliable corporate commute with Zleeto’s AI-driven routing and operations platform. Built for enterprises that move people at scale.</p>
+
+        <div class="features" id="features">
+          <div class="card"><strong>Smart Routing</strong><br><small class="muted">Automatic route generation with live re-optimisation.</small></div>
+          <div class="card"><strong>Real-time Tracking</strong><br><small class="muted">Live vehicle telemetry, ETA and incident alerts.</small></div>
+          <div class="card"><strong>Compliance & Safety</strong><br><small class="muted">Driver verification, checklists and safety scoring.</small></div>
+        </div>
+
+        <p style="margin-top:18px;color:var(--muted)">Trusted by transport teams, operations heads and HR leaders who need reliability and predictability for daily workforce movement.</p>
+
+        <p style="margin-top:20px"><a href="#waitlist" style="padding:12px 18px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;display:inline-block">Join the waitlist →</a></p>
+      </div>
+
+      <aside class="waitlist" id="waitlist" aria-labelledby="waitlist-heading">
+        <h3 id="waitlist-heading">Get early access — join the waitlist</h3>
+        <p style="margin:6px 0;color:var(--muted)">Enter company details and we’ll reach out with a personalised demo slot.</p>
+        <!-- NOTE: Replace action with your backend or 3rd-party form endpoint (e.g. Netlify Forms, HubSpot) -->
+        <form id="waitlist-form" action="/api/waitlist" method="POST">
+          <label for="company">Company</label>
+          <input id="company" name="company" placeholder="Acme Corp" required>
+
+          <label for="name">Your name</label>
+          <input id="name" name="name" placeholder="Sita Reddy" required>
+
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required>
+
+          <label for="size">Team size (approx)</label>
+          <input id="size" name="size" placeholder="e.g. 300" required>
+
+          <button type="submit">Join Waitlist</button>
+        </form>
+        <p style="font-size:12px;margin-top:10px;color:var(--muted)">We never share data. By signing up you agree to be contacted regarding your interest.</p>
+      </aside>
+    </section>
+
+    <section class="how" id="how">
+      <h2 style="margin-top:0">How Zleeto makes things happen</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+        <div class="card"><strong>Plan</strong><p class="muted">Auto-generate optimal routes and pick-up windows with minimal manual work.</p></div>
+        <div class="card"><strong>Operate</strong><p class="muted">Driver app, live telemetry and quick incident workflows to reduce downtime.</p></div>
+        <div class="card"><strong>Improve</strong><p class="muted">Ops analytics, cost-per-trip insights and capacity planning for growth.</p></div>
+      </div>
+    </section>
+
+    <section style="padding:40px">
+      <h3 id="pricing">Pricing & Packages</h3>
+      <p class="muted">Flexible models — per-vehicle, per-seat subscription or fully-managed operations. Contact us for an enterprise quote.</p>
+    </section>
+
+    <section style="padding:40px">
+      <h3>FAQs</h3>
+      <details><summary>Does Zleeto require hardware?</summary><p class="muted">No — we work with driver mobile apps and optional telematics integrations for fleets that already have hardware.</p></details>
+      <details><summary>Can Zleeto integrate with payroll/HR systems?</summary><p class="muted">Yes — SSO, HRIS integrations and API hooks are available for enterprise customers.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div>&copy; <span id="year">2025</span> Zleeto — All rights reserved.</div>
+      <div style="font-size:13px">Contact: <a href="mailto:hello@zleeto.com">hello@zleeto.com</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Small UX: handle demo submission with fetch to avoid page reload (optional)
+    document.getElementById('waitlist-form')?.addEventListener('submit', async function(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = new URLSearchParams(new FormData(form));
+      try{
+        const res = await fetch(form.action, {method:'POST',body:data});
+        if(res.ok) alert('Thanks — we\'ll be in touch.'); else alert('Thanks — we received your request.');
+      }catch(err){
+        alert('Thanks — we received your request.');
+      }
+      form.reset();
+    });
+
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
